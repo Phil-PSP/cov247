@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>FAQ</title>
+ <style>
+  body {
+    background-image: url(hero1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+ font-family: Arial, sans-serif;
+}
+
+.container {
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 20px;
+}
+
+.accordion-item {
+ margin-bottom: 10px;
+}
+
+.accordion-header {
+ background-color: #f2f2f2;
+ border: none;
+ padding: 10px 15px;
+ cursor: pointer;
+ font-size: 18px;
+ transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+ background-color: #ddd;
+}
+
+.accordion-content {
+ color: #f6f6f6;
+ font-weight: 800;
+ display: none;
+ padding: 10px 15px;
+ background-color: transparent;
+}
+
+.fa {
+ float: right;
+}
+ </style>
+</head>
+<body>
+ <div class="container">
+    <h1>Frequently Asked Questions</h1>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Q: What is Vivachek?</span>
+          <i class="fa fa-plus"></i>
+        </button>
+        <div class="accordion-content">
+          <p>A: Vivachek is a brand that offers a range of medical devices, including blood glucose monitors, lactate analyzers, and COVID-19 tests.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+           <span>Q: How do I use the blood glucose monitor?</span>
+           <i class="fa fa-plus"></i>
+        </button>
+        <div class="accordion-content">
+           <p>A: To use the blood glucose monitor, follow these steps:</p>
+           <ol>
+             <li>Prepare a test site by cleaning it with alcohol or isopropyl alcohol.</li>
+             <li>Dip the blood glucose meter probe into the blood on the test site.</li>
+             <li>Allow the probe to react with the blood, ensuring it has adequate contact.</li>
+             <li>Remove the probe and insert it into the blood glucose meter.</li>
+             <li>The meter will read the glucose levels, and the display will light up to show the results.</li>
+           </ol>
+        </div>
+       </div>
+       <div class="accordion-item">
+        <button class="accordion-header">
+           <span>Q: What are the signs and symptoms of high blood glucose?</span>
+           <i class="fa fa-plus"></i>
+        </button>
+        <div class="accordion-content">
+           <p>A: Some signs and symptoms of high blood glucose may include:</p>
+           <ul>
+             <li>Increased thirst</li>
+             <li>Frequent urination</li>
+             <li>Extreme hunger</li>
+             <li>Fatigue</li>
+             <li>Irritability</li>
+             <li>Blurred vision</li>
+           </ul>
+        </div>
+       </div>
+       <div class="accordion-item">
+        <button class="accordion-header">
+           <span>Q: What are the signs and symptoms of low blood glucose?</span>
+           <i class="fa fa-plus"></i>
+        </button>
+        <div class="accordion-content">
+           <p>A: Some signs and symptoms of low blood glucose may include:</p>
+           <ul>
+             <li>Tiredness or feeling weak</li>
+             <li>Blurred vision</li>
+             <li>Dizziness or lightheadedness</li>
+             <li>Sweating</li>
+             <li>Confusion or difficulty concentrating</li>
+             <li>Headache</li>
+           </ul>
+        </div>
+       </div>
+       <div class="accordion-item">
+        <button class="accordion-header">
+           <span>Q: How often should I check my blood glucose levels?</span>
+           <i class="fa fa-plus"></i>
+        </button>
+        <div class="accordion-content">
+           <p>A: The frequency of checking blood glucose levels may vary depending on your diabetes management plan. It is recommended to check blood glucose levels at least:</p>
+           <ul>
+             <li>Every few hours before or after meals</li>
+             <li>At bedtime</li>
+             <li>If symptoms suggest a high or low blood glucose level</li>
+           </ul>
+        </div>
+       </div>
+       <div class="accordion-item">
+        <button class="accordion-header">
+           <span>Q: What can I do to manage my blood glucose levels?</span>
+           <i class="fa fa-plus"></i>
+        </button>
+        <div class="accordion-content">
+           <p>A: There are several strategies you can use to manage your blood glucose levels:</p>
+           <ul>
+             <li>Monitor your blood glucose levels regularly and adjust your diabetes management plan as needed.</li>
+             <li
+      <!-- Add more FAQ items here -->
+    </div>
+ </div>
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+ var acc = document.getElementsByClassName('accordion-header');
+ var i;
+
+ for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener('click', function() {
+      this.classList.toggle('active');
+      var content = this.nextElementSibling;
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+      } else {
+        content.style.display = 'block';
+      }
+    });
+ }
+});
+ </script>
+</body>
+</html>
