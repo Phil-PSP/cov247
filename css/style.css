@@ -556,3 +556,14 @@
 .btt, .h5{
     color: #fff;
 }
+
+#whatsappIcon {
+    position: fixed;
+    bottom: 500px;
+    right: 20px;
+    font-size: 3em;
+}
+
+#whatsappIcon a {
+    color: #25D366; 
+}
